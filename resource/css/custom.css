@@ -37,3 +37,12 @@ nav ul li a:hover {
 	margin-left:250px;
 	padding-top:3px;
 }
+
+.egg{
+	width:30px;
+	height:30px;
+	float:right;
+}
+.egg:hover{
+	cursor:point;
+}
