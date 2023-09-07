@@ -27,6 +27,16 @@
 		    <li><a href="/gitRepository/page/page1.html">page3</a></li>
 		  </ul>
 		</nav>
+		 <div class="tempNav">
+			<div class="tempNav-title">영역체크</div>
+			<div class="tempNav-list">
+				<ul>
+					<li><a href="#">1번</a></li>
+					<li><a href="#">2번</a></li>
+					<li><a href="#">3번</a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </div>
 <div style="height:865px;margin-top:10px;">
@@ -43,13 +53,20 @@ ABCDEF
 </div>
 </body>
 <footer>
+<input type="hidden" id="c_count" value="0"/>
 <div class="egg" id="egg">&nbsp;</div>
 </footer>
 
 </html>
 
 <script>
-	document.getElementById('egg').addEventListener('click',function(){
-		alert("오예");
-	});
+document.getElementById('egg').addEventListener('click',function(){
+	var count = document.getElementById('c_count').value;
+	count ++;
+	document.getElementById('c_count').value = count;
+	
+	if(count > 4){
+		alert("확인");
+	}
+});
 </script>

@@ -20,7 +20,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	cursor:point;
+	cursor:pointer;
 	color: #649ac9;
     transition: color 0.6s;
 }
@@ -44,5 +44,35 @@ nav ul li a:hover {
 	float:right;
 }
 .egg:hover{
-	cursor:point;
+	cursor:pointer;
+}
+
+
+.tempNav{
+	border:1px solid #fff;
+	float:right;
+	width:250px;
+	height:auto;
+	background: #fff;
+}
+.tempNav-list{
+	background-color:#fff;
+}	
+.tempNav li{
+	margin-top:10px;
+}
+
+.tempNav li a{
+	color:#fff;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+.tempNav-title{
+	height: 40px;
+    border-bottom: 1px solid #FFF;
+    text-align: center;
+    font-size: x-large;
+    color: #656464;
+    background-color:#DEE1E6;
 }
