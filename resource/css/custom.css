@@ -2,8 +2,8 @@
 
 .container{
 	width: 99%;
-/* 	background: linear-gradient(-45deg, rgb(45 45 45 / 80%), rgb(0 0 0 / 100%)) fixed, url(/nicm_eclipse/workspace/gitRepository/WebProject/resource/img/wood.jpg) fixed; */
-	background: linear-gradient(-45deg, rgb(45 45 45 / 80%), rgb(0 0 0 / 100%)) fixed, url(/gitRepository/resource/img/wood.jpg) fixed;
+	background: linear-gradient(-45deg, rgb(45 45 45 / 80%), rgb(0 0 0 / 100%)) fixed, url(/nicm_eclipse/workspace/gitRepository/WebProject/resource/img/wood.jpg) fixed;
+/* 	background: linear-gradient(-45deg, rgb(45 45 45 / 80%), rgb(0 0 0 / 100%)) fixed, url(/gitRepository/resource/img/wood.jpg) fixed; */
   	background-size: cover;
 }
 
@@ -76,3 +76,15 @@ nav ul li a:hover {
     color: #656464;
     background-color:#DEE1E6;
 }
+
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: "omyu_pretty", serif 
+}
+ </style>
