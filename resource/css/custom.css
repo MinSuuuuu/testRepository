@@ -49,17 +49,21 @@ nav ul li a:hover {
 
 
 .tempNav{
-	border:1px solid #fff;
-	float:right;
-	width:250px;
-	height:auto;
-	background: #fff;
+	border: 1px solid #595959;
+    float: right;
+    width: 250px;
+    height: auto;
+    background: #cbcbcb;
 }
 .tempNav-list{
 	background-color:#fff;
 }	
+.tempNav ul{
+	background: #cbcbcb;
+}
 .tempNav li{
 	margin-top:10px;
+	background: #cbcbcb;
 }
 
 .tempNav li a{
@@ -69,12 +73,12 @@ nav ul li a:hover {
 }
 
 .tempNav-title{
-	height: 40px;
-    border-bottom: 1px solid #FFF;
+    height: 23px;
+    border-bottom: 1px solid #0a0a0a;
     text-align: center;
-    font-size: x-large;
-    color: #656464;
-    background-color:#DEE1E6;
+    font-size: larger;
+    color: #cfc3c3;
+    background-color: #1c1e21;
 }
 
 @font-face {
@@ -86,5 +90,14 @@ nav ul li a:hover {
 
 body {
 	font-family: "omyu_pretty", serif 
+/* 	font-family:'Noto Sans KR', sans-serif; */
+}
+
+.tempNav-End{
+	float:right;
+	margin-right:7px;
+}
+.tempNav-End:hover{
+	cursor:pointer;	
 }
  </style>

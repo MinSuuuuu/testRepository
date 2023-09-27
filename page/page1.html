@@ -1,10 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="/nicm_eclipse/workspace/gitRepository/WebProject/resource/css/custom.css">
+<!-- <link rel="stylesheet" href="/gitRepository/resource/css/custom.css"> -->
+
+<link rel="icon" type="image/png" sizes="96x96" href="/nicm_eclipse/workspace/gitRepository/WebProject/resource/img/android-icon-96x96.png">
+<!-- <link rel="icon" type="image/png" sizes="96x96" href="/gitRepository/resource/img/android-icon-96x96.png"> -->
+
 <meta charset="UTF-8">
-<title>페이지이동테스트</title>
+<title>SERVICE</title>
 </head>
-<body>
-이동된것임
+<body class="container">
+
+<div style="height:50px;">
+	<a href ="/nicm_eclipse/workspace/gitRepository/WebProject/index.html" >
+<!-- 	<a href ="/gitRepository/index.html" > -->
+	<img class="logo-img" src="/nicm_eclipse/workspace/gitRepository/WebProject/resource/img/logo.png" >
+<!-- 	<img class="logo-img" src="/gitRepository/resource/img/logo.png"> -->
+	</a>
+	<div class="nav-group">
+		<nav>
+		  <ul class="navbar">
+		    <li><a href="/nicm_eclipse/workspace/gitRepository/WebProject/page/page1.html" style="color:#84c7f7">Service</a></li>
+		    <li><a href="/nicm_eclipse/workspace/gitRepository/WebProject/page/page2.html">Project</a></li>
+		    <li><a href="/nicm_eclipse/workspace/gitRepository/WebProject/page/page3.html">Experience</a></li>
+		    <li><a href="/nicm_eclipse/workspace/gitRepository/WebProject/page/page4.html">Contact </a></li>
+<!-- 		    <li><a href="/gitRepository/page/page1.html">Service</a></li> -->
+<!-- 		    <li><a href="/gitRepository/page/page2.html">Project</a></li> -->
+<!-- 		    <li><a href="/gitRepository/page/page3.html">Experience</a></li> -->
+<!-- 		    <li><a href="/gitRepository/page/page4.html">Contact</a></li> -->
+		  </ul>
+		</nav>
+		 <div class="tempNav" style="display:none;">
+			<div class="tempNav-title">영역체크<b id="tempNav_close" class="tempNav-End">X</b></div>
+			<div class="tempNav-list">
+				<ul>
+					<li><a href="#">1번</a></li>
+					<li><a href="#">2번</a></li>
+					<li><a href="#">3번</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- page별 고유영역 start -->
+
+<div style="height:815px;">
+
+<div style="text-align:center;color:#fff;margin-top:60px;">
+	<h1>SERVICE</h1>
+</div>
+<div style="height: 70%;width:32%;border:1px solid #fff;position: absolute;top: 190px;left: 16%;">
+가나다라마바사
+</div>
+<div style="height: 70%;width:32%;border:1px solid #fff;position: absolute;top: 190px;left: 51%;">
+ABCDEF
+</div>
+
+</div>
 </body>
+<!-- page별 고유영역 END -->
+<footer>
+<input type="hidden" id="c_count" value="0"/>
+<div class="egg" id="egg">&nbsp;</div>
+</footer>
+
 </html>
+
+<script>
+document.getElementById('egg').addEventListener('click',function(){
+	var count = document.getElementById('c_count').value;
+	count ++;
+	document.getElementById('c_count').value = count;
+	
+	if(count > 4){
+		document.getElementsByClassName('tempNav')[0].style.display = "block";
+		document.getElementById('c_count').value = 0;
+	}
+});
+
+document.getElementById('tempNav_close').addEventListener('click',function(){
+	document.getElementsByClassName('tempNav')[0].style.display = "none";
+});
+</script>
