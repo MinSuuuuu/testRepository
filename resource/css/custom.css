@@ -2,8 +2,8 @@
 
 .container{
 	width: 99%;
-	background: linear-gradient(-45deg, rgb(45 45 45 / 80%), rgb(0 0 0 / 100%)) fixed, url(/nicm_eclipse/workspace/gitRepository/WebProject/resource/img/wood.jpg) fixed;
-/* 	background: linear-gradient(-45deg, rgb(45 45 45 / 80%), rgb(0 0 0 / 100%)) fixed, url(/gitRepository/resource/img/wood.jpg) fixed; */
+/* 	background: linear-gradient(-45deg, rgb(45 45 45 / 80%), rgb(0 0 0 / 100%)) fixed, url(/nicm_eclipse/workspace/gitRepository/WebProject/resource/img/wood.jpg) fixed; */
+	background: linear-gradient(-45deg, rgb(45 45 45 / 80%), rgb(0 0 0 / 100%)) fixed, url(/gitRepository/resource/img/wood.jpg) fixed;
   	background-size: cover;
 }
 
