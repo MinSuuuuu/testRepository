@@ -90,7 +90,6 @@ nav ul li a:hover {
 
 body {
 	font-family: "omyu_pretty", serif 
-/* 	font-family:'Noto Sans KR', sans-serif; */
 }
 
 .tempNav-End{
@@ -100,4 +99,98 @@ body {
 .tempNav-End:hover{
 	cursor:pointer;	
 }
+
+.aboutme-img-1{
+	height: 49%;
+	width:23%;
+	position: absolute;
+	top: 190px;
+	left: 21%;
+/* 	background: url(/nicm_eclipse/workspace/gitRepository/WebProject/resource/img/unboxing.jpg) no-repeat; */
+	background: url(/gitRepository/resource/img/unboxing.jpg) no-repeat;
+}
+
+.contact-img-1{
+	margin: 25px;
+	height:385px;
+/* 	background: url(/nicm_eclipse/workspace/gitRepository/WebProject/resource/img/contact.jpg) no-repeat; */
+	background: url(/gitRepository/resource/img/contact.jpg) no-repeat;
+	background-size:100% 100%;
+	filter: grayscale(85%);
+	opacity: 0.5;
+}
+
+.f-w-24{
+	color:#fff;
+	font-size: 24px;
+}
+
+.f-w-20{
+	color:#fff;
+	font-size: 20px;
+}
+
+.f-w-16{
+	color:#fff;
+	font-size: 16px;
+}
+
+.img-20{
+	height:20px;
+	width:20px;
+}
+
+.img-35{
+	height:35px;
+	width:35px;
+}
+
+.mg-5{
+	margin-top:5px;
+}
+
+.contact-footer{
+	margin-top:15px;
+	text-align: right;
+}
+
+.contact-body{
+	position: relative;
+}
+.contact-body label{
+	position: absolute;
+	left: 7%;
+}
+.mailing-outlook{
+	color:#c6e9ef;
+}
+.mailing-outlook:hover{
+	cursor:pointer;	
+	color:#8edf95;
+}
+
+/* slider */
+.slidebox {max-width:1200px;margin:0 auto;position:relative;}
+.slidebox .slidelist {position:relative;white-space:nowrap;font-size:0;overflow:hidden;}
+.slidebox .slidelist .slideitem {position:relative;display:inline-block;vertical-align:middle;background-color:#fff;width:100%;transition:all 1s;}
+.slidebox .slidelist .slideitem > a {display:block;width:auto;height:800px;position:relative;}
+.slidebox .slidelist .slideitem > a img {max-width:100%;}
+
+.slidebox .slide-control [class*="control"] label {position:absolute;z-index:10;top:50%;transform:translateY(-50%);padding:20px;border-radius:50%;cursor:pointer;}
+/* .slidebox .slide-control [class*="control"] label.prev {left:-50px;background:#333 url('/nicm_eclipse/workspace/gitRepository/WebProject/resource/img/left-arrow.png') center center / 50% no-repeat;} */
+/* .slidebox .slide-control [class*="control"] label.next {right:-50px;background:#333 url('/nicm_eclipse/workspace/gitRepository/WebProject/resource/img/right-arrow.png') center center / 50% no-repeat;} */
+.slidebox .slide-control [class*="control"] label.prev {left:-50px;background:#333 url('/gitRepository/resource/img/left-arrow.png') center center / 50% no-repeat;}
+.slidebox .slide-control [class*="control"] label.next {right:-50px;background:#333 url('/gitRepository/resource/img/right-arrow.png') center center / 50% no-repeat;}
+
+[name="slide"] {display:none;}
+#slide01:checked ~ .slidelist .slideitem {left:0;}
+#slide02:checked ~ .slidelist .slideitem {left:-100%;}
+#slide03:checked ~ .slidelist .slideitem {left:-200%;}
+#slide04:checked ~ .slidelist .slideitem {left:-300%;}
+
+.slide-control [class*="control"] {display:none;}
+#slide01:checked ~ .slide-control .control01 {display:block;}
+#slide02:checked ~ .slide-control .control02 {display:block;}
+#slide03:checked ~ .slide-control .control03 {display:block;}
+#slide04:checked ~ .slide-control .control04 {display:block;}
  </style>
