@@ -2,7 +2,6 @@
 
 .container{
 	width: 99%;
-/* 	background: linear-gradient(-45deg, rgb(45 45 45 / 80%), rgb(0 0 0 / 100%)) fixed, url(/nicm_eclipse/workspace/gitRepository/WebProject/resource/img/wood.jpg) fixed; */
 	background: linear-gradient(-45deg, rgb(45 45 45 / 80%), rgb(0 0 0 / 100%)) fixed, url(/gitRepository/resource/img/wood.jpg) fixed;
   	background-size: cover;
 }
@@ -106,14 +105,12 @@ body {
 	position: absolute;
 	top: 190px;
 	left: 21%;
-/* 	background: url(/nicm_eclipse/workspace/gitRepository/WebProject/resource/img/unboxing.jpg) no-repeat; */
 	background: url(/gitRepository/resource/img/unboxing.jpg) no-repeat;
 }
 
 .contact-img-1{
 	margin: 25px;
 	height:385px;
-/* 	background: url(/nicm_eclipse/workspace/gitRepository/WebProject/resource/img/contact.jpg) no-repeat; */
 	background: url(/gitRepository/resource/img/contact.jpg) no-repeat;
 	background-size:100% 100%;
 	filter: grayscale(85%);
@@ -171,26 +168,21 @@ body {
 
 /* slider */
 .slidebox {max-width:1200px;margin:0 auto;position:relative;}
-.slidebox .slidelist {position:relative;white-space:nowrap;font-size:0;overflow:hidden;}
-.slidebox .slidelist .slideitem {position:relative;display:inline-block;vertical-align:middle;background-color:#fff;width:100%;transition:all 1s;}
-.slidebox .slidelist .slideitem > a {display:block;width:auto;height:800px;position:relative;}
-.slidebox .slidelist .slideitem > a img {max-width:100%;}
+.slidebox .slidelist {position:relative;white-space:nowrap;overflow:hidden;}
+.slidebox .slidelist .slideitem {position:relative;display:inline-block;vertical-align:middle;background-color:#000;width:1200px;margin-right: 40px;margin-left: -40px;transition:all 1s;border-radius: 30px;}
+.slidebox .slidelist .slideitem .project-content {display:block;width:auto;height:700px;position:relative;}
+
 
 .slidebox .slide-control [class*="control"] label {position:absolute;z-index:10;top:50%;transform:translateY(-50%);padding:20px;border-radius:50%;cursor:pointer;}
-/* .slidebox .slide-control [class*="control"] label.prev {left:-50px;background:#333 url('/nicm_eclipse/workspace/gitRepository/WebProject/resource/img/left-arrow.png') center center / 50% no-repeat;} */
-/* .slidebox .slide-control [class*="control"] label.next {right:-50px;background:#333 url('/nicm_eclipse/workspace/gitRepository/WebProject/resource/img/right-arrow.png') center center / 50% no-repeat;} */
 .slidebox .slide-control [class*="control"] label.prev {left:-50px;background:#333 url('/gitRepository/resource/img/left-arrow.png') center center / 50% no-repeat;}
 .slidebox .slide-control [class*="control"] label.next {right:-50px;background:#333 url('/gitRepository/resource/img/right-arrow.png') center center / 50% no-repeat;}
 
 [name="slide"] {display:none;}
-#slide01:checked ~ .slidelist .slideitem {left:0;}
-#slide02:checked ~ .slidelist .slideitem {left:-100%;}
-#slide03:checked ~ .slidelist .slideitem {left:-200%;}
-#slide04:checked ~ .slidelist .slideitem {left:-300%;}
+#slide01:checked ~ .slidelist .slideitem {left:0px;}
+#slide02:checked ~ .slidelist .slideitem {left:-1200px;}
+
 
 .slide-control [class*="control"] {display:none;}
 #slide01:checked ~ .slide-control .control01 {display:block;}
 #slide02:checked ~ .slide-control .control02 {display:block;}
-#slide03:checked ~ .slide-control .control03 {display:block;}
-#slide04:checked ~ .slide-control .control04 {display:block;}
  </style>
